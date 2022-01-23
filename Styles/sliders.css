@@ -1,0 +1,136 @@
+﻿.conteiner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.conteiner .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    float: left;
+    animation: animate 20s linear infinite;
+}
+
+    .conteiner .slider .slide {
+        position: relative;
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+
+        .conteiner .slider .slide .caption {
+            position: absolute;
+            top: 200px;
+            left: 60px;
+            right: 60px;
+            padding: 30px;
+            /* background: rgba(0, 0, 0, 0.5); */
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+            .conteiner .slider .slide .caption h2 {
+                position: absolute;
+                top: -100px;
+                left: 60px;
+                right: 60px;
+                color: #fff;
+                font-size: 90px;
+                font-weight: 900;
+                line-height: 1.2;
+                /*transition: 0.5s;*/
+            }
+
+            .conteiner .slider .slide .caption p {
+                margin: 0;
+                padding: 0;
+                color: #fff;
+                font-size: 18px;
+                transition: 0.5s;
+            }
+
+        .conteiner .slider .slide.slide1 {
+            background: url("../img/portada1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .conteiner .slider .slide.slide2 {
+            background: url("../img/portada2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .conteiner .slider .slide.slide3 {
+            background: url("../img/top-view-raw-peanuts-in-bowl-on-sackcloth-with-copy-space-vertical.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .conteiner .slider .slide.slide4 {
+            background: url("../img/galeria\ 2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteiner .slider .slide .caption {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+
+        .conteiner .slider .slide .caption h2 {
+            margin: 0 0 10px;
+            top:200px;
+            font-size:50px;
+        }
+
+        .conteiner .slider .slide .caption p {
+            font-size: 16px;
+        }
+}
